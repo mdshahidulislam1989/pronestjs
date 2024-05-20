@@ -1,0 +1,32 @@
+import { Attendance } from './attendance.entity';
+import { BaseEntity } from './base.entity';
+import { Notification } from './notification.entity';
+import { OrgTaskCategory } from './org-task-category.entity';
+import { OrgTaskType } from './org-task-type.entity';
+import { OrgTeam } from './org-team.entity';
+import { OrganizationUser } from './organization-user.entity';
+import { Task } from './task.entity';
+import { User } from './user.entity';
+import { Visit } from './visit.entity';
+import { Workspace } from './workspace.entity';
+export declare class Organization extends BaseEntity {
+    id: number;
+    name: string;
+    image: string;
+    timeZone: string;
+    location: string;
+    teamSize: number;
+    packageName: string;
+    userLimit: number;
+    purchaseToken: string;
+    createdBy: User;
+    organizationUsers: OrganizationUser[];
+    workspaces: Workspace[];
+    taskTypes: OrgTaskType[];
+    taskCategories: OrgTaskCategory[];
+    tasks: Task[];
+    teams: OrgTeam[];
+    visits: Visit[];
+    attendances: Attendance[];
+    notifications: Notification[];
+}

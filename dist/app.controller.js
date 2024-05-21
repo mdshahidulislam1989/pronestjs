@@ -12,17 +12,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppController = void 0;
 const common_1 = require("@nestjs/common");
 const auth_guard_1 = require("./auth/auth.guard");
-const config_1 = require("./config");
 let AppController = class AppController {
     getHello() {
         return `<h1 style="
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: -webkit-fill-available;"
+    align-items: center;"
   >
     ProVisit Server Running on Port &nbsp
-    <span style="color: red">${config_1.GlobalConfig.port}</span>
+    <span style="color: red">hii there</span>
   </h1>`;
     }
 };

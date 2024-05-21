@@ -9,11 +9,10 @@ export class AppController {
     return `<h1 style="
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: -webkit-fill-available;"
+    align-items: center;"
   >
     ProVisit Server Running on Port &nbsp
-    <span style="color: red">${GlobalConfig.port}</span>
+    <span style="color: red">hii there</span>
   </h1>`;
   }
 }

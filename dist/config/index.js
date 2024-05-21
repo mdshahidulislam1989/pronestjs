@@ -4,7 +4,7 @@ exports.GlobalConfig = void 0;
 const database_config_1 = require("./database.config");
 const mail_config_1 = require("./mail.config");
 exports.GlobalConfig = {
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 8080,
     db: database_config_1.DBConfig,
     expoNotificationUrl: 'https://exp.host/--/api/v2/push/send',
     mail: mail_config_1.MailConfig,

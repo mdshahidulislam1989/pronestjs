@@ -1,18 +1,12 @@
 import { Controller, Get } from '@nestjs/common';
-import { Public } from './auth/auth.guard';
-import { GlobalConfig } from './config';
+import { AppService } from './app.service';
+
 @Controller()
 export class AppController {
-  @Public()
+  constructor(private readonly appService: AppService) {}
+
   @Get()
   getHello(): string {
-    return `<h1 style="
-    display: flex;
-    justify-content: center;
-    align-items: center;"
-  >
-    ProVisit Server Running on Port &nbsp
-    <span style="color: red">hii there</span>
-  </h1>`;
+    return this.appService.getHello();
   }
 }

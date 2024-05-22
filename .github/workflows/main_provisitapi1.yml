@@ -52,4 +52,4 @@ jobs:
           app-name: 'provisitapi1'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B2C8EB3C52D48B8821793279002BD6C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F851DA40FDCC49D3A48BF47104C64B7C }}

@@ -21,7 +21,6 @@ const org_team_module_1 = require("./org-team/org-team.module");
 const task_module_1 = require("./task/task.module");
 const task_comment_module_1 = require("./task-comment/task-comment.module");
 const visit_module_1 = require("./visit/visit.module");
-const attendance_module_1 = require("./attendance/attendance.module");
 const my_panel_module_1 = require("./my-panel/my-panel.module");
 const report_module_1 = require("./report/report.module");
 const notification_module_1 = require("./notification/notification.module");
@@ -30,7 +29,7 @@ let AppModule = class AppModule {
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [config_1.GlobalConfig.db, auth_module_1.AuthModule, organization_module_1.OrganizationModule, mail_module_1.MailModule, workspace_module_1.WorkspaceModule, org_task_type_module_1.OrgTaskTypeModule, org_task_category_module_1.OrgTaskCategoryModule, org_team_module_1.OrgTeamModule, task_module_1.TaskModule, task_comment_module_1.TaskCommentModule, visit_module_1.VisitModule, attendance_module_1.AttendanceModule, my_panel_module_1.MyPanelModule, report_module_1.ReportModule, notification_module_1.NotificationModule],
+        imports: [config_1.GlobalConfig.db, auth_module_1.AuthModule, organization_module_1.OrganizationModule, mail_module_1.MailModule, workspace_module_1.WorkspaceModule, org_task_type_module_1.OrgTaskTypeModule, org_task_category_module_1.OrgTaskCategoryModule, org_team_module_1.OrgTeamModule, task_module_1.TaskModule, task_comment_module_1.TaskCommentModule, visit_module_1.VisitModule, my_panel_module_1.MyPanelModule, report_module_1.ReportModule, notification_module_1.NotificationModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })

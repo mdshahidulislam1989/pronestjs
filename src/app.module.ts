@@ -18,7 +18,7 @@ import { ReportModule } from './report/report.module';
 import { NotificationModule } from './notification/notification.module';
 
 @Module({
-  imports: [GlobalConfig.db, AuthModule, OrganizationModule, MailModule, WorkspaceModule, OrgTaskTypeModule, OrgTaskCategoryModule, OrgTeamModule, TaskModule, TaskCommentModule, VisitModule, AttendanceModule, MyPanelModule, ReportModule, NotificationModule],
+  imports: [GlobalConfig.db, AuthModule, OrganizationModule, MailModule, WorkspaceModule, OrgTaskTypeModule, OrgTaskCategoryModule, OrgTeamModule, TaskModule, TaskCommentModule, VisitModule,  MyPanelModule, ReportModule, NotificationModule],
   controllers: [AppController],
   providers: [AppService],
 })
